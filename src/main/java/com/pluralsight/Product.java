@@ -2,12 +2,12 @@ package com.pluralsight;
 
 public class Product {
     private int id;
-    private String product;
+    private String name;
     private double price;
 
     public Product(int id, String product, double price) {
         this.id = id;
-        this.product = product;
+        this.name = product;
         this.price = price;
     }
 
@@ -15,8 +15,8 @@ public class Product {
         return id;
     }
 
-    public String getProduct() {
-        return product;
+    public String getName() {
+        return name;
     }
 
     public double getPrice() {
@@ -25,7 +25,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product:     " + product + "\n"
+        return "Product:     " + name + "\n"
                 + "Price:    $" + String.format("%.2f", price) + "\n"
                 + "ID: " + id + "\n";
     }
