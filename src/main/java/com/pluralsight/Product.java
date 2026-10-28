@@ -1,11 +1,11 @@
 package com.pluralsight;
 
-public class Inventory {
+public class Product {
     private int id;
     private String product;
     private double price;
 
-    public Inventory(int id, String product, double price) {
+    public Product(int id, String product, double price) {
         this.id = id;
         this.product = product;
         this.price = price;
